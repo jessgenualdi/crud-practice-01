@@ -1,0 +1,11 @@
+<h1>All the messages</h1>
+
+
+<% @messages.each do |message| %>
+  <a href="/messages/<%=message.id%>"
+    <h3><%= message.name %></h3>
+    <h4><%= message.body %></h4>
+  </a>
+<% end %>
+
+<a href="/messages/new">Add New Contact</a>

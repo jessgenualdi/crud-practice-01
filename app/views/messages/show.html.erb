@@ -1,0 +1,7 @@
+<h3><%= @message.name %></h3>
+<h4><%= @message.body %></h4>
+
+<a href="<%=@message.id%>/edit">Edit Message</a>
+<div>
+  <%= link_to "Delete message", "/message#{@message.id}", method: :delete %>
+</div>
